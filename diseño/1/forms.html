@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Document html">
+    <meta name="author" content="Ahmed R.">
+    <meta name="keywords" content="computers,programing,web design,html,html5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="lang" content="es-ES">
+    <title>Document</title>
+</head>
+<body>
+    <main id="content">
+        <form name="myform" action="#" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p>
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name">
+                </p>   
+                <p>
+                    <label for="sur">Apellidos: </label>
+                    <input type="text" name="sur" id="sur" size="40">
+                </p>
+                <p>
+                    <label for="born">FEcha de nacimiento: </label>
+                    <input type="date" name="born" id="born" size="10" >
+                </p>
+                <fieldset>
+                    <legend>Género: </legend>
+                    <p>
+                        <p>
+                            <label for="gender">Mujer</label>
+                            <input type="radio" name="gender" id="mujer" value="M">
+                        </p>
+                        <p>
+                            <label for="gender">Hombre</label>
+                            <input type="radio" name="gender" id="hombre" value="H">
+                        </p>
+                        <p>
+                            <label for="gender">Otro / Prefiero no responder</label>
+                            <input type="radio" name="gender" id="otro" value="0" checked>
+                        </p>
+                    </p>
+                </fieldset>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <p>
+                    <label for="numFav">Numero par favorito: </label>
+                    <input type="number" name="numFav" id="numFav" min="0" max="100" step="2" size="5">
+                </p>
+                <p>
+                    <fieldset>
+                        <legend>Intereses personales: </legend>
+                        <p>
+                        <label for="sports">Desportes</label>
+                        <input type="checkbox" name="sports" id="sports" value="s">
+                        </p>
+                        <p>
+                            <label for="vgames">Videojuegos</label>
+                            <input type="checkbox" name="vgames" id="vgames" value="v">
+                        </p>
+                        <p>
+                            <label for="films">Cine</label>
+                            <input type="checkbox" name="films" id="films" value="f">
+                        </p>
+                        <p>
+                            <label for="books">Lectura</label>
+                            <input type="checkbox" name="books" id="books" value="b">
+                        </p>
+                    </fieldset>
+                    <p>
+                        <label for="shift">Turno</label>
+                        <select name="shift" id="shift">
+                            <option value="Morning" selected>Mañana</option>
+                            <option value="Afternoon">Tarde</option>
+                            <option value="Night">Noche</option>    
+                        </select>
+                    </p>
+                    <p>
+                        <label for="city">Ciudad</label>
+                        <select name="city" id="city">
+                            <optgroup label="Andalucia">
+                                <option value="Malaga">Malaga</option>
+                                <option value="Cadiz">Cadiz</option>
+                                <option value="Sevilla">Sevilla</option>
+                            </optgroup>
+                            <optgroup label="Galicia">
+                                <option value="Orense">Orense</option>
+                                <option value="Lugo">Lugo</option>
+                                <option value="Pontevedra">Pontevedra</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                </p>
+                
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

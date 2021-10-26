@@ -60,6 +60,18 @@
                             <input type="text" name="nose8" id="nose8" size="8" pattern="(?=.{6,}$)(?!.*\d{2})(?!.*[A-Z]{2})\w*">
                         </p>
                         <p>
+                            <label for="nose4">Nosequesto9: </label>
+                            <input type="text" name="nose9" id="nose9" size="8" pattern="(?=.{6,8}$)([0-9]*[02468])|([0-9]*([A-Z]([0-9][0-9]+))*[A-Z]([0-9]+[02468]))">
+                        </p>
+                        <p>
+                            <label for="nose4">Nosequesto10: </label>
+                            <input type="text" name="nose10" id="nose10" size="8" pattern="(?=.{3,6}$)(?=.*[0-5])(?=.*[aeiou])(?!.*[aeiou]0)[a-z0-9]+">
+                        </p>
+                        <p>
+                            <label for="nose4">Nosequesto11: </label>
+                            <input type="text" name="nose11" id="nose11" size="8" pattern="(?=.{2,5}$)(?=.*(00|11|22|33|44|55|66|77|88|99))(?!.*[aeiouAEIOU]{3})\w+">
+                        </p>
+                        <p>
                             <input type="submit" value="Enviar">
                         </p>
                     </fieldset>

@@ -12,27 +12,24 @@ and open the template in the editor.
     <body>
         <?php
         $num= $_POST['a'];
-        
-        if ($num) {
+        $numd=$_POST['b'];
 
-            $num1 = 0;
-            $num2 = 1;
+        if ($num && $numd) {
 
-            echo $num1 . '&nbsp;' . $num2 . '&nbsp'; 
-
-            for ($i=$num-2; $i > 0; $i--) { 
-
-                $sum=$num1+$num2;
-
-                echo $sum . '&nbsp;';
-
-                $num1 = $num2;
+            for ($i= $num; $i>0; $i--) { 
                 
-                $num2 = $sum;
+                if ($i%$numd!==0){
+                    echo $i;
+                }
+                
+                else{
+                    echo '*';
+                }
             }
 
             echo "<br>" .' <form action="#" method="post">
             Introduzca otro numero: <input type="number" name="a"/><br>
+            Introduzca otro  otro numero: <input type="number" name="b"/><br>
             <input type="submit" value="Go"/>
             </form>';
         }
@@ -40,6 +37,7 @@ and open the template in the editor.
         else {
             echo ' <form action="#" method="post">
             Introduzca el numero: <input type="number" name="a"/><br>
+            Introduzca el otro numero: <input type="number" name="b"/><br>
             <input type="submit" value="Go"/>
             </form>';
         }

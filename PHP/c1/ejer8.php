@@ -11,16 +11,9 @@
     <input type="number" name="c">
     <input type="submit" value="Enviar">
 </form>
-    <?php 
-        $a = $_GET['a'];
-        $b = $_GET['b'];
-        $c = $_GET['c'];
-        
-        $sqrt=sqrt(($b*$b)-4*$a*$c);
+    <?
 
-        echo (($b*-1) + $sqrt)/2*$a, "<br>";
-        echo (($b*-1) - $sqrt)/2*$a, "<br>";
-
+         phpinfo();
     ?>
 </body>
 </html>

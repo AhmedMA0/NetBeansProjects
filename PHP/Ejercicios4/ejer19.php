@@ -18,7 +18,7 @@ and open the template in the editor.
 
             $c = substr($c,0);
             $co = 1;
-            $cs = $h - 1;
+            $cs = $h;
 
             for ($j=0; $j < $h; $j++) { 
             

@@ -7,6 +7,8 @@
             Introduzca la combinación.
         <?php
             $o= 5;
+
+            $o += $o;
         ?>
 
             <form action="prueba.php" method="post">

@@ -34,3 +34,7 @@ ol li{
 section p{
     background-color: blueviolet;
 }
+
+nav * li:nth-child(odd){
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

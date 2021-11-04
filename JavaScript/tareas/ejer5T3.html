@@ -7,16 +7,26 @@
 <body>
     <p id="text"></p>
     <script>
-        //se pide el numero a el usuario en una ventana emergente
-        let num = prompt("Introduzca un numero: ");
-        
-        //se comprueba si el dato introducido por el usuario es un numero o no y se saca por pantalla si lo es o no
-        if (!isNaN(num)) {
-            alert('Es un número');
-        }
 
-        else{
-            alert("No es un número");
+        //creamos el array con los dias de la semana
+        let dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+        
+        //sacamos por una alerta el array
+        alert(dias);
+
+        //bucle que recorre todo el array posicion a posicion hasta el final
+        for (let i = 0; i < dias.length; i++) {
+            
+            //sacamos el dia de la semana sin coma
+            document.write(dias[i]);
+
+            //comprobamos que el bucle esta en la ultima iteración, si es asi se salta la ultima linea de codigo del bucle
+            if(i==(dias.length-1)){
+            continue;
+            }
+
+            //sacamos la coma despues del dia
+            document.writeln(',');
         }
     </script>
 </body>

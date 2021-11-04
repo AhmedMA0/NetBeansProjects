@@ -1,0 +1,36 @@
+.primerparrafo{
+
+    color:red;
+}
+
+.seccion1{
+    font-weight: bold;
+}
+#findetexto{
+    color:blue;
+}
+span{
+    font-style: italic;
+}
+mark{
+    background-color: lightpink;
+}
+abbr{
+    text-decoration: none;
+}
+figcaption{
+    color: blueviolet;
+}
+ul{
+    list-style-type: square;
+}
+td{
+    text-align: center;
+}
+ol li{
+    color: green;
+    font-weight: bold;
+}
+section p{
+    background-color: blueviolet;
+}

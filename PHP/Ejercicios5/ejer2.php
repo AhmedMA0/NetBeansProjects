@@ -9,30 +9,35 @@
 
         $num=$_POST['num'];
         $count=$_POST['count'];
+        $nums=$_POST['nums'];
 
-        if (!isset($count)) {
-           
-            $count = 0;
-        }
-        if (isset($num)) {
+        
+
+        if (!isset($num)||$count<10) {
             
-            echo $count;
-            
+            $count++;
             echo '<form action="#" method="POST">
-            Introduce otro numero: <input type="number" name="num">
-            <input type="hidden" name="count" value"',$count,'">
+            Introduce numero: <input type="number" name="num" autofocus>
+            <input type="hidden" name="count" value="',$count,'">
+            <input type="hidden" name="nums" value="',$nums.strval($num).'?','">
             <input type="submit" value="Continuar">
             </form>';
-            
         }
 
         else {
-            
-            echo '<form action="#" method="POST">
-            Introduce el numero: <input type="number" name="num">
-            <input type="submit" value="Continuar">
-            </form>';
+            $nums .= strval($num);
         }
+
+        $a=explode("?",$nums);
+
+        unset($a[0]);
+
+        $a= array_map('intval',$a);
+
+        foreach ($a as $b) {
+            echo $b, ', ';
+        }
+
 
     ?>
 </body>
